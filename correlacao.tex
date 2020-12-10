@@ -1,0 +1,82 @@
+\documentclass[12pt,a4paper]{book}
+
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
+
+
+\usepackage[ left = 2cm, right = 3cm, top = 3cm, bottom = 3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{natbib}
+\usepackage{bm}
+\usepackage[short]{optidef}
+\usepackage{cancel}
+\usepackage{comment}
+\usepackage{siunitx}
+\usepackage{indentfirst}
+\usepackage[colorlinks = true,
+linkcolor = blue,
+urlcolor  = blue,
+citecolor = blue,
+anchorcolor = blue]{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+
+\begin{document}	
+	
+	
+	\fancyhead[OR,EL]{\thepage}
+	%\lhead{\rightmark}
+	\setcounter{page}{1}
+	
+
+	\bibpunct{(}{)}{;}{a}{,}{,}
+	
+	\chapter{CORRELAÇÃO}
+	
+		\textbf{Correlação} indica a força de associação entre duas variáveis. A correlação não implica causa sendo que modo de representá-la é utilizando gráficos de dispersão.
+	
+		\section{Medidas de Correlação}
+				Dadas $n$ observações e sendo $ x $ e $ y $ variáveis, calcula-se
+				\subsection{ médias amostrais $\bar{x}$ e $\bar{y}$}
+				
+				\begin{eqnarray}
+					\bar{x} = \frac{\sum x_i}{n} \\
+					\bar{y} = \frac{\sum y_i}{n}
+				\end{eqnarray}
+			
+				\subsection{Variância Amostral $S_{xx}$ e $S_{yy}$}
+				
+				\begin{eqnarray}
+					S_{xx} = \frac{1}{n}\sum(x_i - \bar{x})^2 \\
+					S_{yy} = \frac{1}{n}\sum(y_i - \bar{y})^2
+				\end{eqnarray}
+			
+				\subsection{Covariância Amostral $S_{xy}$}
+				
+				\begin{eqnarray}
+					S_{xy} = \frac{1}{n}\sum(x_i - \bar{x})(y_i - \bar{y})
+				\end{eqnarray}
+				
+				\subsection{Correlação de Pearson $r_{xy}$}
+				\begin{eqnarray}
+					r_{xy} = \frac{\sum x_i y_i - n\bar{x}\bar{y}}{\sqrt{(\sum x_{i}^2 - n\bar{x}^2)}\sqrt{(\sum y_{i}^2 - n\bar{y}^2)}}
+				\end{eqnarray}
+				
+	
+	
+	\newpage 
+	\centering
+	\bibliographystyle{plainnat}
+
+	\bibliography{referencias}
+
+
+\end{document}
