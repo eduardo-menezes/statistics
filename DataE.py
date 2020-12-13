@@ -31,7 +31,7 @@ def variance(x):
         mj = (x[j] - mbar)**2 + mj
 
     sbar = mj/n #divide o valor acumulado pela quantidade de numeros
-    print(sbar)
+
 
     return sbar
 
@@ -55,7 +55,7 @@ def covariance(x,y):
         mk = (x[k] - xbar)*(y[k] - ybar) + mk
 
     sxy = mk/(n-1) #divide o valor acumulado pela quantidade de numeros
-    print(sxy)
+
 
     return sxy
 
@@ -82,13 +82,6 @@ def pearson(x,y): #função que calcula o coeficiente de Pearson / Function that
         xy = x[j]*y[j] + xy
 
     r = (xy - (n * xbar * ybar)) / (np.sqrt(xsqr - n * xbar ** 2) * np.sqrt(ysqr - n * ybar ** 2))
-    print(r)
 
     return r
-
-
-a = [1,2]
-b = [1,2]
-covariance(a,b)
-pearson(a,b)
 
